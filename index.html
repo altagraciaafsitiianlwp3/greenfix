@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Index | GreenFix — Sustainable Living Hub</title>
+  <meta name="description" content="Practical tips and guides for sustainable living." />
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="theme-auto">
+<header class="site-header">
+  <div class="container row space-between align-center">
+    <a class="logo" href="index.html">GreenFix</a>
+    <nav id="nav" class="nav">
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="checklist.html">Checklist</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <button id="themeBtn" class="btn ghost" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
+    </div>
+  </div>
+</header>
+<main class="container">
+<section class="hero">
+  <div class="grid2">
+    <div>
+      <h1>Live better with less.</h1>
+      <p>Welcome to <strong>GreenFix</strong>, your friendly hub for practical, science-backed sustainability. Small daily changes add up—we'll show you how.</p>
+      <div class="row gap">
+        <a class="btn" href="articles.html">Read Articles</a>
+        <a class="btn ghost" href="checklist.html">Start Checklist</a>
+      </div>
+      <div class="trust row gap">
+        <span class="badge">Ad-free</span>
+        <span class="badge">Open resources</span>
+        <span class="badge">Action-focused</span>
+      </div>
+    </div>
+    <div class="card stats">
+      <h3>Your impact snapshot</h3>
+      <div class="row space-between">
+        <div><div class="stat">12</div><div class="muted small">Guides</div></div>
+        <div><div class="stat">40+</div><div class="muted small">Tips</div></div>
+        <div><div class="stat">7d</div><div class="muted small">Starter plan</div></div>
+      </div>
+      <hr/>
+      <p class="muted small">Tip: toggle dark mode with the moon button ↑</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Fresh reads</h2>
+  <div class="cards grid3">
+    <a class="card link" href="article-home-energy.html">
+      <h3>Cut your home energy use</h3>
+      <p>Fast wins that reduce bills and emissions in under a week.</p>
+      <span class="muted small">8‑minute read</span>
+    </a>
+    <a class="card link" href="article-zero-waste.html">
+      <h3>Zero‑waste beginners guide</h3>
+      <p>Practical swaps that actually stick—no perfection required.</p>
+      <span class="muted small">10‑minute read</span>
+    </a>
+    <a class="card link" href="article-eco-travel.html">
+      <h3>Travel lighter, see more</h3>
+      <p>Plan low‑impact trips without losing comfort or time.</p>
+      <span class="muted small">7‑minute read</span>
+    </a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <form id="newsletter" class="newsletter" onsubmit="return subscribe(event)">
+      <label for="email">Get eco tips in your inbox</label>
+      <div class="row">
+        <input type="email" id="email" placeholder="you@example.com" required />
+        <button class="btn" type="submit">Subscribe</button>
+      </div>
+      <p id="news-msg" class="muted small" aria-live="polite"></p>
+    </form>
+    <div class="footer-meta row space-between align-center">
+      <p class="muted small">© 2025 GreenFix. All rights reserved.</p>
+      <p class="muted small"><a href="privacy.html">Privacy</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
